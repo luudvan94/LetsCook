@@ -180,7 +180,7 @@
 		449EAB492A3B603A00571E8E /* RecipeSearching */ = {
 			isa = PBXGroup;
 			children = (
-				449EAB8C2A3B643700571E8E /* Sources */,
+				449EAB8F2A3B674D00571E8E /* Sources */,
 				449EAB4A2A3B603A00571E8E /* RecipeSearching.h */,
 			);
 			path = RecipeSearching;
@@ -210,7 +210,7 @@
 			path = SharedNetwork;
 			sourceTree = "<group>";
 		};
-		449EAB8C2A3B643700571E8E /* Sources */ = {
+		449EAB8F2A3B674D00571E8E /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 			);
