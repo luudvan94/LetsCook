@@ -11,7 +11,77 @@
 		449EAB262A3B5CFA00571E8E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449EAB252A3B5CFA00571E8E /* ContentView.swift */; };
 		449EAB282A3B5CFC00571E8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 449EAB272A3B5CFC00571E8E /* Assets.xcassets */; };
 		449EAB2B2A3B5CFC00571E8E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 449EAB2A2A3B5CFC00571E8E /* Preview Assets.xcassets */; };
+		449EAB4B2A3B603A00571E8E /* RecipeSearching.h in Headers */ = {isa = PBXBuildFile; fileRef = 449EAB4A2A3B603A00571E8E /* RecipeSearching.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		449EAB4E2A3B603A00571E8E /* RecipeSearching.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449EAB482A3B603A00571E8E /* RecipeSearching.framework */; };
+		449EAB4F2A3B603A00571E8E /* RecipeSearching.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 449EAB482A3B603A00571E8E /* RecipeSearching.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		449EAB562A3B604E00571E8E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449EAB552A3B604E00571E8E /* SwiftUI.framework */; };
+		449EAB6F2A3B634100571E8E /* SharedUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 449EAB6E2A3B634100571E8E /* SharedUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		449EAB722A3B634100571E8E /* SharedUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449EAB6C2A3B634000571E8E /* SharedUI.framework */; };
+		449EAB732A3B634100571E8E /* SharedUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 449EAB6C2A3B634000571E8E /* SharedUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		449EAB7F2A3B635000571E8E /* SharedNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 449EAB7E2A3B635000571E8E /* SharedNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		449EAB832A3B635A00571E8E /* SharedNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449EAB7C2A3B635000571E8E /* SharedNetwork.framework */; };
+		449EAB842A3B635A00571E8E /* SharedNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 449EAB7C2A3B635000571E8E /* SharedNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		449EAB872A3B635A00571E8E /* SharedUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449EAB6C2A3B634000571E8E /* SharedUI.framework */; };
+		449EAB882A3B635A00571E8E /* SharedUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 449EAB6C2A3B634000571E8E /* SharedUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		449EAB4C2A3B603A00571E8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 449EAB182A3B5CFA00571E8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 449EAB472A3B603A00571E8E;
+			remoteInfo = RecipeSearching;
+		};
+		449EAB702A3B634100571E8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 449EAB182A3B5CFA00571E8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 449EAB6B2A3B634000571E8E;
+			remoteInfo = SharedUI;
+		};
+		449EAB852A3B635A00571E8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 449EAB182A3B5CFA00571E8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 449EAB7B2A3B635000571E8E;
+			remoteInfo = SharedNetwork;
+		};
+		449EAB892A3B635A00571E8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 449EAB182A3B5CFA00571E8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 449EAB6B2A3B634000571E8E;
+			remoteInfo = SharedUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		449EAB532A3B603A00571E8E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				449EAB4F2A3B603A00571E8E /* RecipeSearching.framework in Embed Frameworks */,
+				449EAB732A3B634100571E8E /* SharedUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449EAB8B2A3B635A00571E8E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				449EAB842A3B635A00571E8E /* SharedNetwork.framework in Embed Frameworks */,
+				449EAB882A3B635A00571E8E /* SharedUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		449EAB202A3B5CFA00571E8E /* LetsCook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsCook.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +89,43 @@
 		449EAB252A3B5CFA00571E8E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		449EAB272A3B5CFC00571E8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		449EAB2A2A3B5CFC00571E8E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		449EAB482A3B603A00571E8E /* RecipeSearching.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RecipeSearching.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		449EAB4A2A3B603A00571E8E /* RecipeSearching.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecipeSearching.h; sourceTree = "<group>"; };
+		449EAB552A3B604E00571E8E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/iOSSupport/System/Library/Frameworks/SwiftUI.framework; sourceTree = DEVELOPER_DIR; };
+		449EAB6C2A3B634000571E8E /* SharedUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SharedUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		449EAB6E2A3B634100571E8E /* SharedUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedUI.h; sourceTree = "<group>"; };
+		449EAB7C2A3B635000571E8E /* SharedNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SharedNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		449EAB7E2A3B635000571E8E /* SharedNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedNetwork.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		449EAB1D2A3B5CFA00571E8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449EAB4E2A3B603A00571E8E /* RecipeSearching.framework in Frameworks */,
+				449EAB722A3B634100571E8E /* SharedUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449EAB452A3B603A00571E8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449EAB872A3B635A00571E8E /* SharedUI.framework in Frameworks */,
+				449EAB832A3B635A00571E8E /* SharedNetwork.framework in Frameworks */,
+				449EAB562A3B604E00571E8E /* SwiftUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449EAB692A3B634000571E8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449EAB792A3B635000571E8E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,7 +139,11 @@
 			isa = PBXGroup;
 			children = (
 				449EAB222A3B5CFA00571E8E /* LetsCook */,
+				449EAB492A3B603A00571E8E /* RecipeSearching */,
+				449EAB6D2A3B634100571E8E /* SharedUI */,
+				449EAB7D2A3B635000571E8E /* SharedNetwork */,
 				449EAB212A3B5CFA00571E8E /* Products */,
+				449EAB542A3B604E00571E8E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -44,6 +151,9 @@
 			isa = PBXGroup;
 			children = (
 				449EAB202A3B5CFA00571E8E /* LetsCook.app */,
+				449EAB482A3B603A00571E8E /* RecipeSearching.framework */,
+				449EAB6C2A3B634000571E8E /* SharedUI.framework */,
+				449EAB7C2A3B635000571E8E /* SharedNetwork.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,7 +177,74 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		449EAB492A3B603A00571E8E /* RecipeSearching */ = {
+			isa = PBXGroup;
+			children = (
+				449EAB8C2A3B643700571E8E /* Sources */,
+				449EAB4A2A3B603A00571E8E /* RecipeSearching.h */,
+			);
+			path = RecipeSearching;
+			sourceTree = "<group>";
+		};
+		449EAB542A3B604E00571E8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				449EAB552A3B604E00571E8E /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		449EAB6D2A3B634100571E8E /* SharedUI */ = {
+			isa = PBXGroup;
+			children = (
+				449EAB6E2A3B634100571E8E /* SharedUI.h */,
+			);
+			path = SharedUI;
+			sourceTree = "<group>";
+		};
+		449EAB7D2A3B635000571E8E /* SharedNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				449EAB7E2A3B635000571E8E /* SharedNetwork.h */,
+			);
+			path = SharedNetwork;
+			sourceTree = "<group>";
+		};
+		449EAB8C2A3B643700571E8E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		449EAB432A3B603A00571E8E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449EAB4B2A3B603A00571E8E /* RecipeSearching.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449EAB672A3B634000571E8E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449EAB6F2A3B634100571E8E /* SharedUI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449EAB772A3B635000571E8E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449EAB7F2A3B635000571E8E /* SharedNetwork.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		449EAB1F2A3B5CFA00571E8E /* LetsCook */ = {
@@ -77,15 +254,75 @@
 				449EAB1C2A3B5CFA00571E8E /* Sources */,
 				449EAB1D2A3B5CFA00571E8E /* Frameworks */,
 				449EAB1E2A3B5CFA00571E8E /* Resources */,
+				449EAB532A3B603A00571E8E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				449EAB4D2A3B603A00571E8E /* PBXTargetDependency */,
+				449EAB712A3B634100571E8E /* PBXTargetDependency */,
 			);
 			name = LetsCook;
 			productName = LetsCook;
 			productReference = 449EAB202A3B5CFA00571E8E /* LetsCook.app */;
 			productType = "com.apple.product-type.application";
+		};
+		449EAB472A3B603A00571E8E /* RecipeSearching */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 449EAB502A3B603A00571E8E /* Build configuration list for PBXNativeTarget "RecipeSearching" */;
+			buildPhases = (
+				449EAB432A3B603A00571E8E /* Headers */,
+				449EAB442A3B603A00571E8E /* Sources */,
+				449EAB452A3B603A00571E8E /* Frameworks */,
+				449EAB462A3B603A00571E8E /* Resources */,
+				449EAB8B2A3B635A00571E8E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				449EAB862A3B635A00571E8E /* PBXTargetDependency */,
+				449EAB8A2A3B635A00571E8E /* PBXTargetDependency */,
+			);
+			name = RecipeSearching;
+			productName = RecipeSearching;
+			productReference = 449EAB482A3B603A00571E8E /* RecipeSearching.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		449EAB6B2A3B634000571E8E /* SharedUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 449EAB742A3B634100571E8E /* Build configuration list for PBXNativeTarget "SharedUI" */;
+			buildPhases = (
+				449EAB672A3B634000571E8E /* Headers */,
+				449EAB682A3B634000571E8E /* Sources */,
+				449EAB692A3B634000571E8E /* Frameworks */,
+				449EAB6A2A3B634000571E8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SharedUI;
+			productName = SharedUI;
+			productReference = 449EAB6C2A3B634000571E8E /* SharedUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		449EAB7B2A3B635000571E8E /* SharedNetwork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 449EAB802A3B635000571E8E /* Build configuration list for PBXNativeTarget "SharedNetwork" */;
+			buildPhases = (
+				449EAB772A3B635000571E8E /* Headers */,
+				449EAB782A3B635000571E8E /* Sources */,
+				449EAB792A3B635000571E8E /* Frameworks */,
+				449EAB7A2A3B635000571E8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SharedNetwork;
+			productName = SharedNetwork;
+			productReference = 449EAB7C2A3B635000571E8E /* SharedNetwork.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +335,15 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					449EAB1F2A3B5CFA00571E8E = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					449EAB472A3B603A00571E8E = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					449EAB6B2A3B634000571E8E = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					449EAB7B2A3B635000571E8E = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
@@ -116,6 +362,9 @@
 			projectRoot = "";
 			targets = (
 				449EAB1F2A3B5CFA00571E8E /* LetsCook */,
+				449EAB472A3B603A00571E8E /* RecipeSearching */,
+				449EAB6B2A3B634000571E8E /* SharedUI */,
+				449EAB7B2A3B635000571E8E /* SharedNetwork */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +376,27 @@
 			files = (
 				449EAB2B2A3B5CFC00571E8E /* Preview Assets.xcassets in Resources */,
 				449EAB282A3B5CFC00571E8E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449EAB462A3B603A00571E8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449EAB6A2A3B634000571E8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449EAB7A2A3B635000571E8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +412,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		449EAB442A3B603A00571E8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449EAB682A3B634000571E8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449EAB782A3B635000571E8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		449EAB4D2A3B603A00571E8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 449EAB472A3B603A00571E8E /* RecipeSearching */;
+			targetProxy = 449EAB4C2A3B603A00571E8E /* PBXContainerItemProxy */;
+		};
+		449EAB712A3B634100571E8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 449EAB6B2A3B634000571E8E /* SharedUI */;
+			targetProxy = 449EAB702A3B634100571E8E /* PBXContainerItemProxy */;
+		};
+		449EAB862A3B635A00571E8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 449EAB7B2A3B635000571E8E /* SharedNetwork */;
+			targetProxy = 449EAB852A3B635A00571E8E /* PBXContainerItemProxy */;
+		};
+		449EAB8A2A3B635A00571E8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 449EAB6B2A3B634000571E8E /* SharedUI */;
+			targetProxy = 449EAB892A3B635A00571E8E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		449EAB2C2A3B5CFC00571E8E /* Debug */ = {
@@ -317,6 +631,204 @@
 			};
 			name = Release;
 		};
+		449EAB512A3B603A00571E8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 87TNJ5KVNP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luuvan.RecipeSearching;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		449EAB522A3B603A00571E8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 87TNJ5KVNP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luuvan.RecipeSearching;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		449EAB752A3B634100571E8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 87TNJ5KVNP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luuvan.SharedUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		449EAB762A3B634100571E8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 87TNJ5KVNP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luuvan.SharedUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		449EAB812A3B635000571E8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 87TNJ5KVNP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luuvan.SharedNetwork;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		449EAB822A3B635000571E8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 87TNJ5KVNP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luuvan.SharedNetwork;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -334,6 +846,33 @@
 			buildConfigurations = (
 				449EAB2F2A3B5CFC00571E8E /* Debug */,
 				449EAB302A3B5CFC00571E8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		449EAB502A3B603A00571E8E /* Build configuration list for PBXNativeTarget "RecipeSearching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				449EAB512A3B603A00571E8E /* Debug */,
+				449EAB522A3B603A00571E8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		449EAB742A3B634100571E8E /* Build configuration list for PBXNativeTarget "SharedUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				449EAB752A3B634100571E8E /* Debug */,
+				449EAB762A3B634100571E8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		449EAB802A3B635000571E8E /* Build configuration list for PBXNativeTarget "SharedNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				449EAB812A3B635000571E8E /* Debug */,
+				449EAB822A3B635000571E8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

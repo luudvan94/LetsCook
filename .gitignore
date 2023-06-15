@@ -1,0 +1,11 @@
+# Xcode
+.DS_Store
+xcuserdata/
+*.xcodeproj/xcuserdata/
+
+# Swift
+.DS_Store
+.build/
+
+# CocoaPods
+Pods/
