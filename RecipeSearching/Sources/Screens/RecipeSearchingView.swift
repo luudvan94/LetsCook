@@ -10,6 +10,8 @@ import SwiftUI
 public struct RecipeSearchingView: View {
 	@StateObject private var viewModel = RecipeSearchingView.ViewModel.init()
 
+	public init() {}
+
 	public var body: some View {
 		NavigationView {
 			List {
