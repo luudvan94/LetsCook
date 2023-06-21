@@ -8,24 +8,30 @@
 import SwiftUI
 
 public struct RecipeSearchingView: View {
-	@StateObject private var viewModel = RecipeSearchingView.ViewModel.init()
+	@StateObject private var viewModel = ViewModel()
 
 	public init() {}
 
 	public var body: some View {
 		NavigationView {
-			List {
-				ForEach(1...10, id: \.self) { index in
-					Text("Item \(index)")
+			if case let .success(recipes) = viewModel.filteredRecipes {
+				List {
+					ForEach(recipes, id: \.self) { recipe in
+						Text(recipe.name)
+					}
+				}
+				.searchable(text: $viewModel.searchText) {
+					ForEach(recipes, id: \.self) { recipe in
+						Text(recipe.name)
+					}
+				}
+			} else if case let .failure(error) = viewModel.filteredRecipes {
+				VStack {
+					Text("Error: \(error.localizedDescription)")
+						.foregroundColor(.red)
+						.padding()
 				}
 			}
-			.searchable(text: $viewModel.searchText) {
-				ForEach(1...10, id: \.self) { index in
-					Text("Item \(index)")
-						.searchCompletion("Item \(index)")
-				}
-			}
-			.navigationTitle("My Screen")
 		}
 	}
 }

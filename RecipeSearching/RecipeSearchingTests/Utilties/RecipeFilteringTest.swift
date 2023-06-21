@@ -9,10 +9,11 @@ import XCTest
 @testable import RecipeSearching
 
 extension Recipe {
-	static func fixture(_ name: String = "") -> Recipe {
-		return .init(name: name)
+	static func fixtureArray(from names: [String]) -> [Recipe] {
+		return names.map { Recipe.init(name: $0) }
 	}
 }
+
 final class RecipeFilteringTest: XCTestCase {
 	func testEmptyRecipesReturnsEmptyResult() {
 		let keyword = ""
@@ -23,14 +24,14 @@ final class RecipeFilteringTest: XCTestCase {
 
 	func testEmptyKeywordReturnsAllRecipes() {
 		let keyword = ""
-		let recipes = [Recipe.fixture("canh chua ca"), Recipe.fixture("ca chien nuoc mam"), Recipe.fixture("dau hu chien")]
+		let recipes = Recipe.fixtureArray(from: ["canh chua ca", "ca chien nuoc mam", "dau hu chien"])
 		let filteredRecipes = recipeFiltering(recipes, by: keyword)
 		XCTAssertTrue(filteredRecipes.count == 3)
 	}
 
 	func testNonEmptyKeywordReturnsFilteredRecipes() {
 		let keyword = "ca"
-		let recipes = [Recipe.fixture("canh chua ca"), Recipe.fixture("ca chien nuoc mam"), Recipe.fixture("dau hu chien")]
+		let recipes = Recipe.fixtureArray(from: ["canh chua ca", "ca chien nuoc mam", "dau hu chien"])
 		let filteredRecipes = recipeFiltering(recipes, by: keyword)
 
 		XCTAssertTrue(filteredRecipes.count == 2)
@@ -39,7 +40,7 @@ final class RecipeFilteringTest: XCTestCase {
 
 	func testNonEmptyKeywordWithWhiteSpaceReturnsFilteredRecipes() {
 		let keyword = "canh chu"
-		let recipes = [Recipe.fixture("canh chua ca"), Recipe.fixture("ca chien nuoc mam"), Recipe.fixture("dau hu chien")]
+		let recipes = Recipe.fixtureArray(from: ["canh chua ca", "ca chien nuoc mam", "dau hu chien"])
 		let filteredRecipes = recipeFiltering(recipes, by: keyword)
 
 		XCTAssertTrue(filteredRecipes.count == 1)
