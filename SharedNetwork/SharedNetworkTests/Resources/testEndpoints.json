@@ -1,0 +1,15 @@
+[
+	{
+		"name": "success",
+		"path": "/success",
+		"httpMethod": "GET"
+	},
+	{
+		"name": "error",
+		"path": "/error",
+		"headers": {
+			"Content-Type": "application/json"
+		},
+		"httpMethod": "GET"
+	}
+]

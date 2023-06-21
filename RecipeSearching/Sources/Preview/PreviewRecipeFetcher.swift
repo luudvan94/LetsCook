@@ -11,7 +11,10 @@ import SharedUI
 class PreviewRecipeFetcher: RecipeFetcher {
 	func fetchRecipes() async throws -> [Recipe] {
 		do {
-			let recipes: [Recipe] = try JSONReader.readJSONFromFile(named: "recipes", bundle: Bundle(for: PreviewRecipeFetcher.self))
+			let recipes: [Recipe] = try JSONReader.readJSONFromFile(
+				named: "recipes",
+				bundle: Bundle(for: PreviewRecipeFetcher.self)
+			)
 			return recipes
 		} catch JSONReader.JSONReaderError.fileNotFound {
 			print("Recipes.json not found in Preview folder.")

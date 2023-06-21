@@ -36,6 +36,21 @@
 		449EABCE2A42685B00571E8E /* PreviewRecipeFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449EABCD2A42685B00571E8E /* PreviewRecipeFetcher.swift */; };
 		449EABDB2A429D0400571E8E /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 449EABDA2A429D0300571E8E /* recipes.json */; };
 		449EABE12A42A19D00571E8E /* JSONReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449EABD72A4294C900571E8E /* JSONReader.swift */; };
+		449EABE62A436B3A00571E8E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449EABE52A436B3A00571E8E /* Endpoint.swift */; };
+		449EABE82A436B5A00571E8E /* EndpointInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449EABE72A436B5A00571E8E /* EndpointInfo.swift */; };
+		449EABEA2A436B8500571E8E /* EndpointProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449EABE92A436B8500571E8E /* EndpointProvider.swift */; };
+		449EABEC2A436BC300571E8E /* EnvironmentInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449EABEB2A436BC300571E8E /* EnvironmentInfo.swift */; };
+		449EABEE2A436BE900571E8E /* EnvironmentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449EABED2A436BE900571E8E /* EnvironmentProvider.swift */; };
+		449EABF02A436C4D00571E8E /* ServiceEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449EABEF2A436C4D00571E8E /* ServiceEndpoint.swift */; };
+		449EABF22A436C8C00571E8E /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449EABF12A436C8C00571E8E /* NetworkClient.swift */; };
+		449EABF52A436E1F00571E8E /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 449EABF42A436E1F00571E8E /* KeychainAccess */; };
+		449EABF72A436E6400571E8E /* KeychainStored.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449EABF62A436E6400571E8E /* KeychainStored.swift */; };
+		449EABFA2A4372BD00571E8E /* OHHTTPStubsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 449EABF92A4372BD00571E8E /* OHHTTPStubsSwift */; };
+		449EAC032A4372DC00571E8E /* SharedNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449EAB7C2A3B635000571E8E /* SharedNetwork.framework */; };
+		449EAC0B2A43731000571E8E /* NetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449EAC0A2A43731000571E8E /* NetworkClientTests.swift */; };
+		449EAC0D2A4376F700571E8E /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 449EAC0C2A4376F700571E8E /* Dependencies */; };
+		449EAC112A4378ED00571E8E /* testEndpoints.json in Resources */ = {isa = PBXBuildFile; fileRef = 449EAC0F2A4378DC00571E8E /* testEndpoints.json */; };
+		449EAC132A43790600571E8E /* testEnvironment.json in Resources */ = {isa = PBXBuildFile; fileRef = 449EAC122A43790600571E8E /* testEnvironment.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +88,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 449EAB472A3B603A00571E8E;
 			remoteInfo = RecipeSearching;
+		};
+		449EAC042A4372DC00571E8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 449EAB182A3B5CFA00571E8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 449EAB7B2A3B635000571E8E;
+			remoteInfo = SharedNetwork;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -128,6 +150,19 @@
 		449EABCD2A42685B00571E8E /* PreviewRecipeFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewRecipeFetcher.swift; sourceTree = "<group>"; };
 		449EABD72A4294C900571E8E /* JSONReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONReader.swift; sourceTree = "<group>"; };
 		449EABDA2A429D0300571E8E /* recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipes.json; sourceTree = "<group>"; };
+		449EABE52A436B3A00571E8E /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		449EABE72A436B5A00571E8E /* EndpointInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointInfo.swift; sourceTree = "<group>"; };
+		449EABE92A436B8500571E8E /* EndpointProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointProvider.swift; sourceTree = "<group>"; };
+		449EABEB2A436BC300571E8E /* EnvironmentInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentInfo.swift; sourceTree = "<group>"; };
+		449EABED2A436BE900571E8E /* EnvironmentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentProvider.swift; sourceTree = "<group>"; };
+		449EABEF2A436C4D00571E8E /* ServiceEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceEndpoint.swift; sourceTree = "<group>"; };
+		449EABF12A436C8C00571E8E /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		449EABF62A436E6400571E8E /* KeychainStored.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStored.swift; sourceTree = "<group>"; };
+		449EABFF2A4372DC00571E8E /* SharedNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharedNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		449EAC092A43731000571E8E /* SharedNetworkTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SharedNetworkTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		449EAC0A2A43731000571E8E /* NetworkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTests.swift; sourceTree = "<group>"; };
+		449EAC0F2A4378DC00571E8E /* testEndpoints.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = testEndpoints.json; sourceTree = "<group>"; };
+		449EAC122A43790600571E8E /* testEnvironment.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = testEnvironment.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +198,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				449EAC0D2A4376F700571E8E /* Dependencies in Frameworks */,
+				449EABF52A436E1F00571E8E /* KeychainAccess in Frameworks */,
+				449EABFA2A4372BD00571E8E /* OHHTTPStubsSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +209,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				449EABAC2A3D5EAC00571E8E /* RecipeSearching.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449EABFC2A4372DC00571E8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449EAC032A4372DC00571E8E /* SharedNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +243,7 @@
 				449EAB6C2A3B634000571E8E /* SharedUI.framework */,
 				449EAB7C2A3B635000571E8E /* SharedNetwork.framework */,
 				449EABA82A3D5EAC00571E8E /* RecipeSearchingTests.xctest */,
+				449EABFF2A4372DC00571E8E /* SharedNetworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -251,6 +298,10 @@
 		449EAB7D2A3B635000571E8E /* SharedNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				449EAC002A4372DC00571E8E /* SharedNetworkTests */,
+				449EABE42A436B2200571E8E /* Utils */,
+				449EABE32A436B1900571E8E /* Services */,
+				449EABE22A436B1300571E8E /* Models */,
 				449EAB7E2A3B635000571E8E /* SharedNetwork.h */,
 			);
 			path = SharedNetwork;
@@ -357,6 +408,54 @@
 				449EABD72A4294C900571E8E /* JSONReader.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		449EABE22A436B1300571E8E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				449EABE52A436B3A00571E8E /* Endpoint.swift */,
+				449EABE72A436B5A00571E8E /* EndpointInfo.swift */,
+				449EABEB2A436BC300571E8E /* EnvironmentInfo.swift */,
+				449EABEF2A436C4D00571E8E /* ServiceEndpoint.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		449EABE32A436B1900571E8E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				449EABE92A436B8500571E8E /* EndpointProvider.swift */,
+				449EABED2A436BE900571E8E /* EnvironmentProvider.swift */,
+				449EABF12A436C8C00571E8E /* NetworkClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		449EABE42A436B2200571E8E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				449EABF62A436E6400571E8E /* KeychainStored.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		449EAC002A4372DC00571E8E /* SharedNetworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				449EAC0E2A4378C400571E8E /* Resources */,
+				449EAC0A2A43731000571E8E /* NetworkClientTests.swift */,
+				449EAC092A43731000571E8E /* SharedNetworkTests-Bridging-Header.h */,
+			);
+			path = SharedNetworkTests;
+			sourceTree = "<group>";
+		};
+		449EAC0E2A4378C400571E8E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				449EAC0F2A4378DC00571E8E /* testEndpoints.json */,
+				449EAC122A43790600571E8E /* testEnvironment.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -471,6 +570,11 @@
 			dependencies = (
 			);
 			name = SharedNetwork;
+			packageProductDependencies = (
+				449EABF42A436E1F00571E8E /* KeychainAccess */,
+				449EABF92A4372BD00571E8E /* OHHTTPStubsSwift */,
+				449EAC0C2A4376F700571E8E /* Dependencies */,
+			);
 			productName = SharedNetwork;
 			productReference = 449EAB7C2A3B635000571E8E /* SharedNetwork.framework */;
 			productType = "com.apple.product-type.framework";
@@ -491,6 +595,24 @@
 			name = RecipeSearchingTests;
 			productName = RecipeSearchingTests;
 			productReference = 449EABA82A3D5EAC00571E8E /* RecipeSearchingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		449EABFE2A4372DC00571E8E /* SharedNetworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 449EAC062A4372DC00571E8E /* Build configuration list for PBXNativeTarget "SharedNetworkTests" */;
+			buildPhases = (
+				449EABFB2A4372DC00571E8E /* Sources */,
+				449EABFC2A4372DC00571E8E /* Frameworks */,
+				449EABFD2A4372DC00571E8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				449EAC052A4372DC00571E8E /* PBXTargetDependency */,
+			);
+			name = SharedNetworkTests;
+			productName = SharedNetworkTests;
+			productReference = 449EABFF2A4372DC00571E8E /* SharedNetworkTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -515,8 +637,13 @@
 					};
 					449EAB7B2A3B635000571E8E = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 					};
 					449EABA72A3D5EAC00571E8E = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
+					};
+					449EABFE2A4372DC00571E8E = {
 						CreatedOnToolsVersion = 14.3.1;
 						LastSwiftMigration = 1430;
 					};
@@ -534,6 +661,8 @@
 			packageReferences = (
 				449EAB902A3D029300571E8E /* XCRemoteSwiftPackageReference "SwiftLint" */,
 				449EAB9F2A3D5E4F00571E8E /* XCRemoteSwiftPackageReference "swift-dependencies" */,
+				449EABF32A436E1E00571E8E /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				449EABF82A4372BD00571E8E /* XCRemoteSwiftPackageReference "OHHTTPStubs" */,
 			);
 			productRefGroup = 449EAB212A3B5CFA00571E8E /* Products */;
 			projectDirPath = "";
@@ -544,6 +673,7 @@
 				449EAB6B2A3B634000571E8E /* SharedUI */,
 				449EAB7B2A3B635000571E8E /* SharedNetwork */,
 				449EABA72A3D5EAC00571E8E /* RecipeSearchingTests */,
+				449EABFE2A4372DC00571E8E /* SharedNetworkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -584,6 +714,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449EABFD2A4372DC00571E8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449EAC112A4378ED00571E8E /* testEndpoints.json in Resources */,
+				449EAC132A43790600571E8E /* testEnvironment.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,6 +823,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				449EABE82A436B5A00571E8E /* EndpointInfo.swift in Sources */,
+				449EABF02A436C4D00571E8E /* ServiceEndpoint.swift in Sources */,
+				449EABEE2A436BE900571E8E /* EnvironmentProvider.swift in Sources */,
+				449EABEC2A436BC300571E8E /* EnvironmentInfo.swift in Sources */,
+				449EABF72A436E6400571E8E /* KeychainStored.swift in Sources */,
+				449EABF22A436C8C00571E8E /* NetworkClient.swift in Sources */,
+				449EABEA2A436B8500571E8E /* EndpointProvider.swift in Sources */,
+				449EABE62A436B3A00571E8E /* Endpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -693,6 +840,14 @@
 			files = (
 				449EABC12A42062400571E8E /* RecipeFilteringTest.swift in Sources */,
 				449EABB92A3D61E700571E8E /* RecipeSearchingView_ViewModelTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449EABFB2A4372DC00571E8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449EAC0B2A43731000571E8E /* NetworkClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -723,6 +878,11 @@
 			isa = PBXTargetDependency;
 			target = 449EAB472A3B603A00571E8E /* RecipeSearching */;
 			targetProxy = 449EABAD2A3D5EAC00571E8E /* PBXContainerItemProxy */;
+		};
+		449EAC052A4372DC00571E8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 449EAB7B2A3B635000571E8E /* SharedNetwork */;
+			targetProxy = 449EAC042A4372DC00571E8E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1039,6 +1199,7 @@
 		449EAB812A3B635000571E8E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1062,6 +1223,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1072,6 +1234,7 @@
 		449EAB822A3B635000571E8E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1139,6 +1302,43 @@
 			};
 			name = Release;
 		};
+		449EAC072A4372DC00571E8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87TNJ5KVNP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luuvan.SharedNetworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "SharedNetwork/SharedNetworkTests/SharedNetworkTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		449EAC082A4372DC00571E8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87TNJ5KVNP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luuvan.SharedNetworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "SharedNetwork/SharedNetworkTests/SharedNetworkTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1196,6 +1396,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		449EAC062A4372DC00571E8E /* Build configuration list for PBXNativeTarget "SharedNetworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				449EAC072A4372DC00571E8E /* Debug */,
+				449EAC082A4372DC00571E8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -1215,6 +1424,22 @@
 				minimumVersion = 0.5.1;
 			};
 		};
+		449EABF32A436E1E00571E8E /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		449EABF82A4372BD00571E8E /* XCRemoteSwiftPackageReference "OHHTTPStubs" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/OHHTTPStubs";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1224,6 +1449,21 @@
 			productName = Dependencies;
 		};
 		449EABA22A3D5E8B00571E8E /* Dependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 449EAB9F2A3D5E4F00571E8E /* XCRemoteSwiftPackageReference "swift-dependencies" */;
+			productName = Dependencies;
+		};
+		449EABF42A436E1F00571E8E /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 449EABF32A436E1E00571E8E /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		449EABF92A4372BD00571E8E /* OHHTTPStubsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 449EABF82A4372BD00571E8E /* XCRemoteSwiftPackageReference "OHHTTPStubs" */;
+			productName = OHHTTPStubsSwift;
+		};
+		449EAC0C2A4376F700571E8E /* Dependencies */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 449EAB9F2A3D5E4F00571E8E /* XCRemoteSwiftPackageReference "swift-dependencies" */;
 			productName = Dependencies;

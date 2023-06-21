@@ -1,0 +1,7 @@
+{
+	"baseURL": "https://mock.url",
+	"authTokenKey": "AuthToken",
+	"headers": {
+		"Accept": "application/json"
+	}
+}
