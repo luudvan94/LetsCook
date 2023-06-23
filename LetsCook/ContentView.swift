@@ -10,7 +10,9 @@ import RecipeSearching
 
 struct ContentView: View {
     var body: some View {
-        RecipeSearchingView()
+		RecipeSearchingView()
+//		NavigationView {
+//		}
     }
 }
 

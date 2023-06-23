@@ -8,16 +8,14 @@
 import Foundation
 import Combine
 import Dependencies
-
-protocol RecipeFetcher {
-	func fetchRecipes() async throws -> [Recipe]
-}
+import SharedNetwork
 
 extension RecipeSearchingView {
+	@MainActor
 	class ViewModel: ObservableObject {
 		@Dependency(\.recipeFetcher) var recipeFetcher
 		@Published var searchText = ""
-		@Published var filteredRecipes: Result<[Recipe], Error> = .success([])
+		@Published var filteredRecipes: RemoteData<[Recipe], Error> = .notAsked
 
 		private var allRecipes = [Recipe]()
 		private var cancellables = Set<AnyCancellable>()
@@ -31,19 +29,16 @@ extension RecipeSearchingView {
 					self.filterRecipes(with: text, allRecipes: self.allRecipes, using: recipeFiltering)
 				}
 				.store(in: &cancellables)
+		}
 
-			Task {
-				do {
-					let allRecipes = try await recipeFetcher.fetchRecipes()
-					DispatchQueue.main.async {
-						self.allRecipes = allRecipes
-						self.filterRecipes(with: self.searchText, allRecipes: allRecipes, using: recipeFiltering)
-					}
-				} catch {
-					DispatchQueue.main.async {
-						self.filteredRecipes = .failure(error)
-					}
-				}
+		func fetchRecipes() async {
+			do {
+				self.filteredRecipes = .loading
+				let allRecipes = try await recipeFetcher.fetchRecipes()
+				self.allRecipes = allRecipes
+				self.filterRecipes(with: self.searchText, allRecipes: allRecipes, using: recipeFiltering)
+			} catch {
+				self.filteredRecipes = .failure(error)
 			}
 		}
 

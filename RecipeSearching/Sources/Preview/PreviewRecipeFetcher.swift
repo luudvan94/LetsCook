@@ -8,7 +8,7 @@
 import Foundation
 import SharedUI
 
-class PreviewRecipeFetcher: RecipeFetcher {
+class PreviewRecipeFetcher: RecipeListFetcher, RecipeDetailFetcher {
 	func fetchRecipes() async throws -> [Recipe] {
 		do {
 			let recipes: [Recipe] = try JSONReader.readJSONFromFile(
@@ -31,5 +31,9 @@ class PreviewRecipeFetcher: RecipeFetcher {
 				userInfo: [NSLocalizedDescriptionKey: "Error reading Recipes.json: \(error.localizedDescription)"]
 			)
 		}
+	}
+
+	func fetchDetails(for recipe: Recipe) async throws -> RecipeDetail {
+		.fixture()
 	}
 }
